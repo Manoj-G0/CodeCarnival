@@ -1,0 +1,113 @@
+.coding
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 92vh;
+    width: 100vw;
+}
+.controller
+{
+    width: 20%;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    padding: 30px 20px;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.controller select{
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+.coding-data-container
+{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.coding-data
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: scroll;
+    /* background-color: red; */
+    padding-top: 20%;
+    padding-bottom: 20px;
+}
+.data
+{   
+    width: 60%;
+    text-align: left;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.card-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+input[type="submit"]{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+@media screen and (max-width:480px)
+{
+    .coding{
+        height: 100%;
+        flex-direction: column;
+    }
+    .controller{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .coding-data{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .data{
+        /* background-color: red; */
+        width: auto;
+        height: auto;
+        text-align: justify;
+    }
+}

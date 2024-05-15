@@ -1,0 +1,119 @@
+header{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    backdrop-filter: blur(0.1rem);
+    box-shadow: 0 0px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1000;
+}
+header nav{
+    display: flex;
+    gap: 20px;
+}
+header a{
+    text-decoration: none;
+    color: var(--btn-color);
+    transition: color 0.1s;
+}
+/* header a:hover{
+    color: black;
+} */
+nav a{
+    text-decoration: none;
+    color:var(--btn-color);
+    font-weight: 500;
+    position: relative;
+}
+.nav-res
+{
+    display: none;
+}
+nav a::after
+{
+    position: absolute;
+    content:'';
+    width: 0%;
+    height: 2px;
+    background-color: var(--btn-color);
+    bottom: -2px;
+    left: 0;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+nav a:hover
+{
+    /* color: #fff; */
+    color: black;
+}
+nav a:hover::after{
+    width: 100%;
+}
+svg{
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px){
+    header
+    {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    header h1
+    {
+        text-align: center;
+    }
+    header nav,.nav-active
+    {
+        position: fixed;
+        top: 70%;
+        left: -150%;
+        width: 100%;
+        padding: 20px 40px;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+        background-color:rgba(255,255,255,1);
+    }
+    nav.nav-active
+    {
+        left: 0%;
+    }
+    .nav-res{
+        display: block;
+    }
+    nav a{
+        text-decoration: none;
+        color:var(--btn-color);
+        font-weight: 500;
+        position: relative;
+    }
+    nav a::after
+    {
+        position: absolute;
+        content:'';
+        width: 0%;
+        height: 2px;
+        background-color: var(--btn-color);
+        bottom: -2px;
+        left: 0;
+        border-radius: 20px;
+        transition: width 0.3s;
+    }
+    nav a:hover
+    {
+        color: black;
+    }
+    .nav-head
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
